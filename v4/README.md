@@ -165,10 +165,11 @@ func main() {
 **Environment variables** (loaded automatically at startup):
 
 | Variable | Default | Description |
-|---|---|---|
-| `GO_PAGINATE_DEFAULT_LIMIT` | `10` | Default items per page |
-| `GO_PAGINATE_MAX_LIMIT` | `100` | Maximum allowed limit |
-| `GO_PAGINATE_DEBUG` | `false` | Enable SQL debug logging |
+| -------- | ------- | ----------- |
+|`GO_PAGINATE_LOG_LEVEL`|`INFO`| Logging level |
+| `GO_PAGINATE_DEFAULT_LIMIT`|`10`| Default items per page |
+|`GO_PAGINATE_MAX_LIMIT`|`100`| Maximum allowed limit |
+|`GO_PAGINATE_DEBUG`|`false` | Enable SQL debug logging |
 
 ```bash
 GO_PAGINATE_DEFAULT_LIMIT=25 GO_PAGINATE_MAX_LIMIT=500 ./myapp

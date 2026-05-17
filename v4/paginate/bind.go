@@ -2,7 +2,6 @@ package paginate
 
 import (
 	"fmt"
-	"log/slog"
 	"net/url"
 	"reflect"
 	"strconv"
@@ -333,7 +332,7 @@ func setDefaultValues(params *PaginationParams) {
 	// Apply global max limit
 	maxLimit := GetMaxLimit()
 	if params.Limit > maxLimit {
-		logger := slog.With("component", "go-paginate-bind")
+		logger := getLogger("go-paginate-bind")
 		logger.Warn("Limit exceeds maximum, applying global max limit",
 			"requested_limit", params.Limit,
 			"max_limit", maxLimit)

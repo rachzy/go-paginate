@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"log/slog"
 	"reflect"
 	"strconv"
 	"strings"
@@ -70,7 +69,7 @@ func (b *PaginatorBuilder) Page(page int) *PaginatorBuilder {
 
 // Limit sets the number of items per page with global max limit validation
 func (b *PaginatorBuilder) Limit(limit int) *PaginatorBuilder {
-	logger := slog.With("component", "go-paginate-builder")
+	logger := getLogger("go-paginate-builder")
 
 	if b.err != nil {
 		return b
