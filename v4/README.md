@@ -150,17 +150,51 @@ Configure once at application startup.
 
 ```go
 func main() {
-    // Programmatic configuration
-    paginate.SetDefaultLimit(20)   // default items per page (default: 10)
-    paginate.SetMaxLimit(200)      // maximum allowed limit (default: 100)
-    paginate.SetDebugMode(true)    // log all generated SQL to slog
+    ctx := context.Background()
 
-    // Custom logger
-    paginate.SetLogger(slog.New(slog.NewJSONHandler(os.Stdout, nil)))
+    // Initialization (optional)
+    paginate.Init(ctx, &paginate.GlobalConfig{
+		DefaultLimit: 20,       // default items per page (default: 10)
+		MaxLimit:     200,      // maximum allowed limit (default: 100)
+		DebugMode:    true,     // log all generated SQL to slog
+	})
 
     // ...
 }
 ```
+
+It's also possible to pass your own logger during initialization (**recommended if you don't want INFO logging being printed in your terminal**):
+
+```go
+defaultLoggerOpts := &slog.HandlerOptions{
+    Level: slog.LevelWarn, // "Info" is the default level
+}
+logger := slog.New(slog.NewJSONHandler(os.Stdout, defaultLoggerOpts))
+
+paginate.InitWithLogger(ctx, &paginate.GlobalConfig{
+    DefaultLimit: 20,
+    MaxLimit:     200,
+    DebugMode:    true,
+}, logger)
+```
+
+You can also make use of programmatic configuration:
+
+```go
+// Programmatic configuration
+paginate.SetDefaultLimit(20)
+paginate.SetMaxLimit(200)
+paginate.SetDebugMode(true)
+```
+
+Additionally, you can set your own custom logger in other parts of your application with `SetLogger`:
+
+```go
+// Custom logger
+paginate.SetLogger(slog.New(slog.NewJSONHandler(os.Stdout, nil)))
+```
+
+**Important**: go-paginate is configured to print INFO level logs by default, so expect to see logs in your terminal if running it without proper configuration.
 
 **Environment variables** (loaded automatically at startup):
 
