@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/url"
 
-	"github.com/booscaaa/go-paginate/v3/paginate"
+	"github.com/rachzy/go-paginate/v3/paginate"
 )
 
 func main() {

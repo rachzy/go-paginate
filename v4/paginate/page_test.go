@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/booscaaa/go-paginate/v4/paginate"
+	"github.com/rachzy/go-paginate/v4/paginate"
 )
 
 func params(page, limit int) *paginate.PaginationParams {

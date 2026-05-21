@@ -5,8 +5,8 @@
 <p align="center">
   <h1 align="center">Go Paginate — The Ultimate Go Pagination Library</h1>
   <p align="center">
-    <a href="https://pkg.go.dev/github.com/booscaaa/go-paginate/v4"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
-    <a href="https://github.com/booscaaa/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
+    <a href="https://pkg.go.dev/github.com/rachzy/go-paginate/v4"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
+    <a href="https://github.com/rachzy/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
     <a href="/LICENSE"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge"></a>
     <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/booscaaa/go-paginate/test.yaml?style=for-the-badge">
     <a href="https://codecov.io/gh/booscaaa/go-paginate"><img alt="Coverage" src="https://img.shields.io/codecov/c/github/booscaaa/go-paginate/master.svg?style=for-the-badge"></a>
@@ -20,9 +20,9 @@
 
 | Version | Status | Documentation | Install |
 |---|---|---|---|
-| **v4** ✨ | **Latest — recommended** | [v4/README.md](v4/README.md) | `go get github.com/booscaaa/go-paginate/v4` |
-| v3 | Stable | [v3/README.md](v3/README.md) | `go get github.com/booscaaa/go-paginate/v3` |
-| v2 | Legacy | — | `go get github.com/booscaaa/go-paginate/v2` |
+| **v4** ✨ | **Latest — recommended** | [v4/README.md](v4/README.md) | `go get github.com/rachzy/go-paginate/v4` |
+| v3 | Stable | [v3/README.md](v3/README.md) | `go get github.com/rachzy/go-paginate/v3` |
+| v2 | Legacy | — | `go get github.com/rachzy/go-paginate/v2` |
 
 ---
 
@@ -276,7 +276,7 @@ v4 is a complete rewrite with first-class **cursor pagination**, **generic respo
 ## Installation
 
 ```bash
-go get github.com/booscaaa/go-paginate/v4
+go get github.com/rachzy/go-paginate/v4
 ```
 
 📖 **[Full v4 Documentation](v4/README.md)**

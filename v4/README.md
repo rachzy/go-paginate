@@ -5,8 +5,8 @@
 <p align="center">
   <h1 align="center">Go Paginate v4 — The Ultimate Go Pagination Library</h1>
   <p align="center">
-    <a href="https://pkg.go.dev/github.com/booscaaa/go-paginate/v4"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
-    <a href="https://github.com/booscaaa/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
+    <a href="https://pkg.go.dev/github.com/rachzy/go-paginate/v4"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
+    <a href="https://github.com/rachzy/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
     <a href="/LICENSE"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge"></a>
     <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/booscaaa/go-paginate/test.yaml?style=for-the-badge">
     <img alt="Go Version" src="https://img.shields.io/badge/go-1.21+-blue?style=for-the-badge">
@@ -71,7 +71,7 @@ v4 is a **complete rewrite** focused on developer experience, generics, and prod
 ## Installation
 
 ```bash
-go get github.com/booscaaa/go-paginate/v4
+go get github.com/rachzy/go-paginate/v4
 ```
 
 **Requirements**: Go 1.21+
@@ -86,7 +86,7 @@ package main
 import (
     "net/http"
     "encoding/json"
-    "github.com/booscaaa/go-paginate/v4/paginate"
+    "github.com/rachzy/go-paginate/v4/paginate"
 )
 
 type User struct {
@@ -942,7 +942,7 @@ import (
     "encoding/json"
     "net/http"
 
-    "github.com/booscaaa/go-paginate/v4/paginate"
+    "github.com/rachzy/go-paginate/v4/paginate"
 )
 
 type Product struct {
@@ -1174,7 +1174,7 @@ LIMIT $N              -- cursor pagination (NoOffset=true)
 ## Migration from v3
 
 ```bash
-go get github.com/booscaaa/go-paginate/v4
+go get github.com/rachzy/go-paginate/v4
 ```
 
 | v3 | v4 |

@@ -22,7 +22,7 @@ export GO_PAGINATE_MAX_LIMIT=1000
 ```go
 package main
 
-import "github.com/booscaaa/go-paginate/v3/paginate"
+import "github.com/rachzy/go-paginate/v3/paginate"
 
 func init() {
     // Set global configurations
@@ -75,7 +75,7 @@ package main
 import (
     "log/slog"
     "os"
-    "github.com/booscaaa/go-paginate/v3/paginate"
+    "github.com/rachzy/go-paginate/v3/paginate"
 )
 
 type User struct {

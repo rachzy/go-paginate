@@ -22,7 +22,7 @@ package main
 import (
     "fmt"
     "log"
-    "github.com/booscaaa/go-paginate/v3/paginate"
+    "github.com/rachzy/go-paginate/v3/paginate"
 )
 
 func main() {
@@ -45,7 +45,7 @@ func main() {
 ```go
 import (
     "net/url"
-    "github.com/booscaaa/go-paginate/v3/paginate"
+    "github.com/rachzy/go-paginate/v3/paginate"
 )
 
 func handler() {

@@ -3,7 +3,7 @@ package paginate_test
 import (
 	"testing"
 
-	"github.com/booscaaa/go-paginate/paginate"
+	"github.com/rachzy/go-paginate/paginate"
 )
 
 type Test struct {

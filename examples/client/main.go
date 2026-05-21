@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/booscaaa/go-paginate/v3/client"
+	"github.com/rachzy/go-paginate/v3/client"
 )
 
 func main() {

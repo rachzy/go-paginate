@@ -1,3 +1,3 @@
-module github.com/booscaaa/go-paginate
+module github.com/rachzy/go-paginate
 
 go 1.18

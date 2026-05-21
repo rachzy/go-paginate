@@ -5,8 +5,8 @@
 <p align="center">
   <h1 align="center">Go Paginate v3 - The Ultimate Go Pagination Library</h1>
   <p align="center">
-    <a href="https://pkg.go.dev/github.com/booscaaa/go-paginate/v3"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
-    <a href="https://github.com/booscaaa/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
+    <a href="https://pkg.go.dev/github.com/rachzy/go-paginate/v3"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
+    <a href="https://github.com/rachzy/go-paginate/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-paginate.svg?style=for-the-badge"></a>
     <a href="/LICENSE"><img alt="Software License" src="https://img.shields.io/badge/license-MIT-red.svg?style=for-the-badge"></a>
     <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/booscaaa/go-paginate/test.yaml?style=for-the-badge">
     <a href="https://codecov.io/gh/booscaaa/go-paginate"><img alt="Coverage" src="https://img.shields.io/codecov/c/github/booscaaa/go-paginate/master.svg?style=for-the-badge"></a>
@@ -38,7 +38,7 @@ Go Paginate v3 is the **most powerful and flexible** Go pagination library avail
 ## 📦 Installation
 
 ```bash
-go get github.com/booscaaa/go-paginate/v3
+go get github.com/rachzy/go-paginate/v3
 ```
 
 **Requirements**: Go 1.24.2+
@@ -48,7 +48,7 @@ go get github.com/booscaaa/go-paginate/v3
 Go Paginate v3 also includes a **client library** that allows other Go applications to easily generate query string parameters compatible with go-paginate:
 
 ```go
-import "github.com/booscaaa/go-paginate/v3/client"
+import "github.com/rachzy/go-paginate/v3/client"
 
 // Create a client and build URLs with pagination parameters
 c := client.New("https://api.example.com/users")
@@ -69,7 +69,7 @@ import (
     "fmt"
     "log"
     "net/url"
-    "github.com/booscaaa/go-paginate/v3/paginate"
+    "github.com/rachzy/go-paginate/v3/paginate"
 )
 
 // User model with comprehensive paginate tags
@@ -1084,7 +1084,7 @@ Both patterns work! The new pattern takes priority when both are present.
 Clone the repository and run the examples:
 
 ```bash
-git clone https://github.com/booscaaa/go-paginate.git
+git clone https://github.com/rachzy/go-paginate.git
 cd go-paginate
 
 # Run examples from the examples folder
@@ -1143,7 +1143,7 @@ export GO_PAGINATE_MAX_LIMIT=1000
 ```go
 package main
 
-import "github.com/booscaaa/go-paginate/v3/paginate"
+import "github.com/rachzy/go-paginate/v3/paginate"
 
 func init() {
     // Set global defaults
@@ -1220,7 +1220,7 @@ Contributions are very welcome! Here's how you can help:
 
 ```bash
 # Fork and clone the repository
-git clone https://github.com/booscaaa/go-paginate.git
+git clone https://github.com/rachzy/go-paginate.git
 cd go-paginate/v3
 
 # Install dependencies
@@ -1257,8 +1257,8 @@ git push origin feature/amazing-feature
 ## 📚 Additional Resources
 
 - 📖 **[Complete Bind Documentation](v3/BIND_README.md)** - Detailed guide on query parameter binding
-- 🔗 **[Go Reference](https://pkg.go.dev/github.com/booscaaa/go-paginate/v3)** - Complete API documentation
-- 📝 **[Examples Repository](https://github.com/booscaaa/go-paginate/examples)** - More example code
+- 🔗 **[Go Reference](https://pkg.go.dev/github.com/rachzy/go-paginate/v3)** - Complete API documentation
+- 📝 **[Examples Repository](https://github.com/rachzy/go-paginate/examples)** - More example code
 
 ---
 
@@ -1275,7 +1275,7 @@ If Go Paginate v3 has been helpful to you, consider:
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/booscaaa/go-paginate/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/rachzy/go-paginate/blob/master/LICENSE) file for details.
 
 ```
 MIT License

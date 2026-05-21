@@ -1,7 +1,7 @@
-module github.com/booscaaa/go-paginate/v3/examples/client
+module github.com/rachzy/go-paginate/v3/examples/client
 
 go 1.24.2
 
-replace github.com/booscaaa/go-paginate/v3 => ../../v3
+replace github.com/rachzy/go-paginate/v3 => ../../v3
 
-require github.com/booscaaa/go-paginate/v3 v3.0.0
+require github.com/rachzy/go-paginate/v3 v3.0.0

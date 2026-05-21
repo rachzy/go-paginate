@@ -462,7 +462,7 @@ Go Paginate v3 adds **7 powerful new operators** that make your database queries
 Upgrade to v3 today and supercharge your pagination capabilities!
 
 ```bash
-go get github.com/booscaaa/go-paginate/v3
+go get github.com/rachzy/go-paginate/v3
 ```
 
 ---

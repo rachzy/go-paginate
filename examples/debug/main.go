@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/booscaaa/go-paginate/v3/paginate"
+	"github.com/rachzy/go-paginate/v3/paginate"
 )
 
 // User represents a user entity
